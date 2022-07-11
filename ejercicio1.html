@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejercicio1.css">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">HAGA CLICK SOBRE LOS CUADRADOS</h1>
+
+    <div class="contenedor">
+        <button class="boton1"></button>
+		<button class="boton2"></button>
+		<button class="boton3"></button>
+    </div>
+
+    <script>
+       var fondo = document.getElementsByClassName('fondo');
+
+       var rojo = document.getElementsByClassName('boton1')[0];
+       rojo.addEventListener('click',function() {
+            document.body.style = 'background: red;';
+            console.log(rojo);
+       });
+
+       var verde = document.getElementsByClassName('boton2')[0];
+       verde.addEventListener('click',function() {
+            document.body.style = 'background: green;';
+       });
+       
+       var azul = document.getElementsByClassName('boton3')[0];
+        azul.addEventListener('click',function() {
+            document.body.style = 'background: blue;';
+       });
+    </script>
+
+</body>
+
+</html>
